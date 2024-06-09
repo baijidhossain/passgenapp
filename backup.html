@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from passgenapp.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Mar 2024 10:33:12 GMT -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator – Create Strong, Secure Passwords Instantly</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Password Generator – Create Strong, Secure Passwords Instantly">
+  <meta name="description"
+    content="Generate strong, secure passwords quickly and easily with our browser-based password generator. No need to worry about data leaks – our tool is completely in-browser.">
+  <meta name="keywords"
+    content="password generator, secure passwords, strong passwords, data privacy, browser-based, HTML, CSS, JS">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://passgen.vmx.link/">
+  <meta property="og:title" content="Password Generator - Create Strong, Secure Passwords Instantly">
+  <meta property="og:description"
+    content="Generate strong, secure passwords quickly and easily with our browser-based password generator. No need to worry about data leaks – our tool is completely in-browser.">
+  <meta property="og:image" content="../passgen.vmx.link/icon-512x512.html">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://passgen.vmx.link/">
+  <meta property="twitter:title" content="Password Generator - Create Strong, Secure Passwords Instantly">
+  <meta property="twitter:description"
+    content="Generate strong, secure passwords quickly and easily with our browser-based password generator. No need to worry about data leaks – our tool is completely in-browser.">
+  <meta property="twitter:image" content="../passgen.vmx.link/icon-512x512.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style/style.css">
+
+
+
+
+</head>
+
+<body>
+  <section class="hero-sec ptb-80">
+    <div class="container">
+      <div class="content">
+        <div class="brand-logo">
+          <img src="passgen-logo.png" width="300" />
+        </div>
+        <div class="title">
+          <h1>Easily Create Strong, Unique Passwords</h1>
+          <p>Generate secure, robust passwords in seconds with our user-friendly browser-based tool. Our
+            generator ensures no data leaks, so safeguard your accounts and peace of mind with confidence.
+            Protect your online security with our reliable and easy-to-use password generator.</p>
+        </div>
+        <div class="generator-wrapper">
+          <div class="generator">
+            <div class="generator-inner">
+              <div class="input-container">
+                <input type="text" value="" id="password">
+              </div>
+              <div class="button-container">
+                <div class="copy-button" title="Copy to clipboard">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                    <path
+                      d="M19 3h-2.25a1 1 0 0 0-1-1h-7.5a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm0 17H5V5h2v2h10V5h2v15z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="re-generate-button" title="Re-Generate">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1);">
+                    <path
+                      d="M10 11H7.101l.001-.009a4.956 4.956 0 0 1 .752-1.787 5.054 5.054 0 0 1 2.2-1.811c.302-.128.617-.226.938-.291a5.078 5.078 0 0 1 2.018 0 4.978 4.978 0 0 1 2.525 1.361l1.416-1.412a7.036 7.036 0 0 0-2.224-1.501 6.921 6.921 0 0 0-1.315-.408 7.079 7.079 0 0 0-2.819 0 6.94 6.94 0 0 0-1.316.409 7.04 7.04 0 0 0-3.08 2.534 6.978 6.978 0 0 0-1.054 2.505c-.028.135-.043.273-.063.41H2l4 4 4-4zm4 2h2.899l-.001.008a4.976 4.976 0 0 1-2.103 3.138 4.943 4.943 0 0 1-1.787.752 5.073 5.073 0 0 1-2.017 0 4.956 4.956 0 0 1-1.787-.752 5.072 5.072 0 0 1-.74-.61L7.05 16.95a7.032 7.032 0 0 0 2.225 1.5c.424.18.867.317 1.315.408a7.07 7.07 0 0 0 2.818 0 7.031 7.031 0 0 0 4.395-2.945 6.974 6.974 0 0 0 1.053-2.503c.027-.135.043-.273.063-.41H22l-4-4-4 4z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="bar"></div>
+            </div>
+          </div>
+          <div class="options">
+            <div class="header">
+              <h3 style="display: flex;align-items: center;gap: 8px;margin-bottom: 10px">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:svgjs="http://svgjs.com/svgjs" width="20" height="20" x="0" y="0" viewBox="0 0 48 48"
+                  style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                  <g>
+                    <path fill="#000000" fill-rule="nonzero"
+                      d="M24 34a5.002 5.002 0 0 1 4.9 4H44v2l-15.1.001a5.002 5.002 0 0 1-9.8 0L4 40v-2h15.1a5.002 5.002 0 0 1 4.9-4zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm10-17a5.002 5.002 0 0 1 4.9 4H44v2l-5.1.001a5.002 5.002 0 0 1-9.8 0L4 25v-2h25.1a5.002 5.002 0 0 1 4.9-4zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM14 4a5.002 5.002 0 0 1 4.9 4H44v2l-25.1.001a5.002 5.002 0 0 1-9.8 0L4 10V8h5.1A5.002 5.002 0 0 1 14 4zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
+                      data-original="#000000"></path>
+                  </g>
+                </svg>
+                <span>Options</span>
+              </h3>
+            </div>
+            <div class="option-body">
+              <div class="check-container">
+                <div class="check-group">
+                  <label class="form-control">
+                    <input id="uppercase" type="checkbox" checked />
+                    <span>ABC</span>
+                  </label>
+                  <label class="form-control">
+                    <input id="lowercase" type="checkbox" checked />
+                    <span>abc</span>
+                  </label>
+                </div>
+                <div class="check-group">
+                  <label class="form-control">
+                    <input id="number" type="checkbox" checked />
+                    <span>1234</span>
+                  </label>
+                  <label class="form-control">
+                    <input id="symbol" type="checkbox" checked />
+                    <span>#$*&</span>
+                  </label>
+                </div>
+              </div>
+              <div class="range-container">
+                <div class="range-content">
+                  <div class="range-slide">
+                    <label style="display: block; margin-bottom: 10px;">Password Length</label>
+                    <input class="slider" type="range" min="4" max="30" value="12" id="slide">
+                  </div>
+                  <div class="range-input">
+                    <input type="number" min="4" max="30" value="12" id="range">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="content">
+        <div class="features-inner">
+          <div>
+            <div>
+              <h2 class="features-title">Best Password
+                Generator</h2>
+              <p>Protect your online security with our reliable and easy-to-use password generator.
+                Generate secure passwords that
+                can't be easily guessed or hacked, and safeguard your accounts with confidence.</p>
+            </div>
+
+            <div class="feature-list">
+              <div class="feature">
+                <h3 class="title">Browser-based</h3>
+                <p>Generate passwords within your browser
+                </p>
+              </div>
+              <div class="feature">
+                <h3 class="title">Secure</h3>
+                <p>Passwords that protect accounts.
+                </p>
+              </div>
+              <div class="feature">
+                <h3 class="title">Installable</h3>
+                <p>Install like an app for easy access
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="security.png" width="410" height="246" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year">2024</span> passgenapp.com. All Rights Reserved. Powered by <a style="color: #98ae85;"
+        href="https://alpha.net.bd/">Alpha Net</a></p>
+  </footer>
+
+  <div class="notification">
+  </div>
+
+  <script src="script/script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').then(function (registration) {
+          console.log('serviceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          console.log('serviceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+</body>
+
+
+<!-- Mirrored from passgenapp.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Mar 2024 10:33:15 GMT -->
+
+</html>
