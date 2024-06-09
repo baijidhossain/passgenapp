@@ -295,7 +295,8 @@ section.hero-sec {
   background-image: url('../hero-bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #eeffe0;
+  /* background-color: #eeffe0; */
+  background-color: linear-gradient(to bottom, #eeffe0 0%, #eeffe0 100%);
 }
 
 /*About*/
