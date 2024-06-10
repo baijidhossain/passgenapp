@@ -33,32 +33,75 @@
     content="Explore the valuable brands of Passgenapp, including Alpha Net, Central Florida IT Solutions, iPBXPhone, Alpha PBX, and more. Discover innovative solutions at passgenapp.com." />
   <meta property="twitter:image" content="./passgenapp-og-img.jpg" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com/" />
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet" />
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style/style.css" />
   <link rel="stylesheet" href="style/bootstrap-grid.css" />
+  <style>
+    .menu>li>a {
+      position: relative;
+    }
+
+    .menu>li>.brand::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% + 5px);
+      background-color: #7dca3a;
+    }
+
+    .more_btn {
+      color: #ffffff !important;
+      border-color: #7dca3a !important;
+      background-color: #7dca3a !important;
+    }
+
+    .more_btn:hover {
+      color: #fff !important;
+      background-color: #72be30 !important;
+      border-color: #72be30 !important;
+    }
+
+    .more_btn i {
+      font-size: 13px !important;
+    }
+
+    .more_btn:focus {
+      border: 0 solid !important;
+      box-shadow: 0 0 0 0 rgba(130, 138, 145, .5) !important;
+    }
+  </style>
 </head>
 
 <body>
-  <section class="hero-sec pb-80">
+  <section>
     <div class="container" style="border-bottom: 1px solid #d9ecc9">
       <div class="top-nav">
         <div>
           <a href="/passgenapp/"><img src="passgen-logo.png" width="200" alt="logo" loading="lazy" /></a>
         </div>
         <ul class="menu">
-          <li><a href="/passgenapp/">Home</a></li>
-          <li><a href="/passgenapp/about.html">About</a></li>
-          <li><a href="/passgenapp/brands.html">Brands</a></li>
-          <li><a href="/passgenapp/faq.html">FAQ</a></li>
+          <li><a class="home" href="/passgenapp/">Home</a></li>
+          <li><a class="about" href="/passgenapp/about.html">About</a></li>
+          <li><a class="brand" href="/passgenapp/brands.html">Brands</a></li>
+          <li><a class="faq" href="/passgenapp/faq.html">FAQ</a></li>
+          <li><a class="contact" href="/passgenapp/contact.html">Contact</a></li>
 
-          <li><a href="/passgenapp/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
-    <div class="container ptb-80 pb-0">
+  </section>
+
+  <section class="hero-sec ptb-80">
+    <div class="container pb-80">
       <div class="row justify-content-center">
         <div class="col-10">
           <h1 class="text-center mb-4">Serving Best IT Solutions for Businesses through Our Brands</h1>
@@ -73,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="container ptb-80">
+    <div class="container ">
       <h2 class="title-decor mb-4">Worldwide Brands</h2>
       <div class="row justify-content-center">
         <div class="col-lg-3 col-md-4 col-6">
@@ -200,7 +243,7 @@
   </section>
 
   <!-- Alpha Net -->
-  <section class="ptb-80">
+  <section class="ptb-100">
     <div class="container">
       <h2 class="sec-title text-center">Know More About Our Brands</h2>
       <div class="info-card">
@@ -257,8 +300,13 @@
                 </ul>
               </div>
             </div>
-            <a href="https://alpha.net.bd" target="_blank">Learn more about Alpha Net <img src="./img/arrow-icon-2.svg"
-                alt="arrow icon" /></a>
+
+            <a href="https://alpha.net.bd" class="btn btn-outline-success more_btn mt-4" target="_blank">
+
+              About of Alpha Net <i class="fa-angles-right fa-solid fs-6"></i>
+
+            </a>
+
           </div>
           <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="brand-img">
@@ -271,7 +319,7 @@
     </div>
   </section>
   <!-- CFL-IT -->
-  <section class="ptb-80 bg-lighter">
+  <section class="ptb-100 bg-lighter">
     <div class="container">
       <div class="info-card">
         <div class="row gx-5 flex-lg-row align-items-center">
@@ -333,15 +381,16 @@
                 </ul>
               </div>
             </div>
-            <a href="https://cfl-it.com/" target="_blank">Learn more about CFL-IT <img src="./img/arrow-icon-2.svg"
-                alt="arrow icon" /></a>
+            <a href="https://cfl-it.com/" class="btn btn-outline-success more_btn mt-4" target="_blank">About of CFL-IT
+              <i class="fa-angles-right fa-solid fs-6"></i> </a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- IPBX Phone -->
-  <section class="ptb-80">
+  <section class="ptb-100">
     <div class="container">
       <div class="info-card">
         <div class="row flex-column-reverse gx-5 flex-lg-row align-items-center">
@@ -391,8 +440,12 @@
                 </ul>
               </div>
             </div>
-            <a href="https://ipbxphone.com" target="_blank">Learn more about iPBXPhone System <img
-                src="./img/arrow-icon-2.svg" alt="arrow icon" /></a>
+
+            <a href="https://ipbxphone.com" class="btn btn-outline-success more_btn mt-4" target="_blank">About of
+              IPBX Phone System
+              <i class="fa-angles-right fa-solid fs-6"></i>
+            </a>
+
           </div>
           <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="brand-img">
@@ -405,9 +458,8 @@
     </div>
   </section>
 
-
   <!-- Residential VPS -->
-  <section class="ptb-80 bg-lighter">
+  <section class="ptb-100 bg-lighter">
     <div class="container">
       <div class="info-card">
         <div class="row gx-5 align-items-center">
@@ -458,8 +510,9 @@
                 </ul>
               </div>
             </div>
-            <a href="https://residentialvps.com/" target="_blank">Learn more about Residential VPS <img
-                src="./img/arrow-icon-2.svg" alt="arrow icon" /></a>
+            <a href="https://residentialvps.com/" class="btn btn-outline-success more_btn mt-4" target="_blank">About of
+              Residential VPS <i class="fa-angles-right fa-solid fs-6"></i> </a>
+
           </div>
 
         </div>
@@ -468,7 +521,7 @@
   </section>
 
   <!-- Alpha SMS -->
-  <section class="ptb-80">
+  <section class="ptb-100">
     <div class="container">
       <div class="info-card">
         <div class="row flex-column-reverse gx-5 flex-lg-row align-items-center">
@@ -520,8 +573,11 @@
                 </ul>
               </div>
             </div>
-            <a href="https://sms.net.bd" target="_blank">Learn more about Alpha SMS <img src="./img/arrow-icon-2.svg"
-                alt="arrow icon" /></a>
+            <a href="https://sms.net.bd" class="btn btn-outline-success more_btn mt-4" target="_blank">About of Alpha
+              SMS
+              <i class="fa-angles-right fa-solid fs-6"></i>
+            </a>
+
           </div>
           <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="brand-img">
@@ -533,8 +589,9 @@
       </div>
     </div>
   </section>
+
   <!-- VPS.com.bd -->
-  <section class="ptb-80 bg-lighter">
+  <section class="ptb-100 bg-lighter">
     <div class="container">
       <div class="info-card">
         <div class="row gx-5 flex-lg-row align-items-center">
@@ -594,17 +651,19 @@
                 </ul>
               </div>
             </div>
-            <a href="https://vps.com.bd/" target="_blank">Learn more about vps.com.bd <img src="./img/arrow-icon-2.svg"
-                alt="arrow icon" /></a>
+
+            <a href="https://vps.com.bd/" class="btn btn-outline-success more_btn mt-4" target="_blank">About of
+              vps.com.bd <i class="fa-angles-right fa-solid fs-6"></i>
+            </a>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
   <!-- Alpha PBX -->
-  <section class="ptb-80">
+  <section class="ptb-100">
     <div class="container">
       <div class="info-card">
         <div class="row gx-5 align-items-center flex-column-reverse flex-lg-row">
@@ -657,8 +716,10 @@
                 </ul>
               </div>
             </div>
-            <a href="https://pbx.com.bd/" target="_blank">Learn more about Alpha PBX <img src="./img/arrow-icon-2.svg"
-                alt="arrow icon" /></a>
+
+            <a href="https://pbx.com.bd/" class="btn btn-outline-success more_btn mt-4" target="_blank">About of Alpha
+              PBX <i class="fa-angles-right fa-solid fs-6"></i> </a>
+
           </div>
 
           <div class="col-lg-5 mb-4 mb-lg-0">
@@ -674,7 +735,7 @@
   </section>
 
   <!-- Go Digital BD -->
-  <section class="ptb-80 bg-lighter">
+  <section class="ptb-100 bg-lighter">
     <div class="container">
       <div class="info-card">
         <div class="row gx-5 flex-lg-row align-items-center">
@@ -728,15 +789,19 @@
                 </ul>
               </div>
             </div>
-            <a href="https://www.godigital.com.bd/" target="_blank">Learn more about Go Digital <img
-                src="./img/arrow-icon-2.svg" alt="arrow icon" /></a>
+            <a href="https://www.godigital.com.bd/" class="btn btn-outline-success more_btn mt-4" target="_blank">About
+              of
+              Go Digital <i class="fa-angles-right fa-solid fs-6"></i> </a>
+
+
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Virtue.works -->
-  <section class="ptb-80">
+  <section class="ptb-100">
     <div class="container">
       <div class="info-card">
         <div class="row flex-column-reverse gx-5 flex-lg-row align-items-center">
@@ -756,8 +821,12 @@
               goals. With virtue.works, your organization can stand out in the digital landscape and reach more people,
               inspiring action and making a lasting impact.
             </p>
-            <a href="https://virtue.works/" class="mt-3" target="_blank">Learn more about virtue.Works <img
-                src="./img/arrow-icon-2.svg" alt="arrow icon" /></a>
+            <a href="https://virtue.works/" class="btn btn-outline-success more_btn mt-4" target="_blank"> About of
+              virtue.works <i class="fa-angles-right fa-solid fs-6"></i> </a>
+
+
+
+
           </div>
           <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="brand-img">
@@ -769,8 +838,9 @@
       </div>
     </div>
   </section>
+
   <!-- Dojos.Info -->
-  <section class="ptb-80 bg-lighter">
+  <section class="ptb-100 bg-lighter">
     <div class="container">
       <div class="info-card">
         <div class="row gx-5 align-items-center align-items-center">
@@ -792,15 +862,18 @@
               arts, ranging from traditional karate dojos to modern MMA gyms.
             </p>
 
-            <a href="https://dojos.info/" class="mt-3" target="_blank">Learn more about dojos.info <img
-                src="./img/arrow-icon-2.svg" alt="arrow icon" /></a>
+            <a href="https://dojos.info/" class="btn btn-outline-success more_btn mt-4" target="_blank"> About of
+              dojos.info <i class="fa-angles-right fa-solid fs-6"></i>
+            </a>
+
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Hotel Motel -->
-  <section class="ptb-80">
+  <section class="ptb-100">
     <div class="container">
       <div class="info-card">
         <div class="row flex-column-reverse gx-5 flex-lg-row align-items-center">
@@ -814,8 +887,12 @@
               match every preference and budget. With over 100,000 hotels and motels to choose from, you can easily
               search by address, city, county, zip code, or state, making planning your next stay effortless.
             </p>
-            <a href="https://www.hotelmotels.info/" class="mt-3" target="_blank">Learn more about hotelmotels.info
-              <img src="./img/arrow-icon-2.svg" alt="arrow icon" /></a>
+
+            <a href="https://www.hotelmotels.info/" class="btn btn-outline-success more_btn mt-4" target="_blank"> About
+              of hotelmotels.info <i class="fa-angles-right fa-solid fs-6"></i>
+            </a>
+
+
           </div>
           <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="brand-img">
@@ -827,8 +904,9 @@
       </div>
     </div>
   </section>
+
   <!-- PizzaShops.Info -->
-  <section class="ptb-80 bg-lighter">
+  <section class="ptb-100 bg-lighter">
     <div class="container">
       <div class="info-card">
         <div class="row gx-5 align-items-center align-items-center">
@@ -849,15 +927,20 @@
               chains and an interactive map for each place, showing the exact location of every pizza shop.
             </p>
 
-            <a href="https://www.pizzashops.info/" class="mt-3" target="_blank">Learn more about
-              pizzashops.info <img src="./img/arrow-icon-2.svg" alt="arrow icon" /></a>
+            <a href="https://www.pizzashops.info/" class="btn btn-outline-success more_btn mt-4" target="_blank"> About
+              of pizzashops.info <i class="fa-angles-right fa-solid fs-6"></i>
+
+            </a>
+
+
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- VMX.Link -->
-  <section class="ptb-80">
+  <section class="ptb-100">
     <div class="container">
       <div class="info-card">
         <div class="row flex-column-reverse gx-5 flex-lg-row align-items-center">
@@ -871,8 +954,9 @@
               for individuals and businesses looking to streamline their link-sharing process. Shorten your links, track
               their performance, and optimize your online presence with vmx.kink.
             </p>
-            <a href="https://vmx.link/" class="mt-3" target="_blank">Learn more about vmx.link <img
-                src="./img/arrow-icon-2.svg" alt="arrow icon" /></a>
+            <a href="https://vmx.link/" class="btn btn-outline-success more_btn mt-4" target="_blank">About of vmx.link
+              <i class="fa-angles-right fa-solid fs-6"></i>
+            </a>
           </div>
           <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="brand-img">

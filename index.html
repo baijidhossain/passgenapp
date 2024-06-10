@@ -35,6 +35,9 @@
     content="Generate strong, secure passwords quickly and easily with our browser-based password generator. No need to worry about data leaks – our tool is completely in-browser.">
   <meta property="twitter:image" content="./passgenapp-og-img.jpg">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
@@ -52,24 +55,44 @@
     }
 
     .more_btn {
-      font-size: 18px;
-      transition: 0.4s;
-      display: inline-flex;
-      align-items: center;
-      color: #7dca3a !important;
+      color: #ffffff !important;
+      border-color: #7dca3a !important;
+      background-color: #7dca3a !important;
     }
 
-    .more_btn img {
-      margin-top: 2px;
-      width: 20px;
-      height: 20px;
-      margin-left: 8px;
-      transition: 0.5s;
+    .more_btn:hover {
+      color: #fff !important;
+      background-color: #72be30 !important;
+      border-color: #72be30 !important;
     }
 
-    .bran_link a {
+    .more_btn i {
+      font-size: 13px !important;
+    }
+
+    .more_btn:focus {
+      border: 0 solid !important;
+      box-shadow: 0 0 0 0 rgba(130, 138, 145, .5) !important;
+    }
+
+    .brand_link a {
       text-decoration: underline !important;
-      color: #7dca3a !important;
+      color: #787878 !important;
+    }
+
+    .menu>li>a {
+      position: relative;
+    }
+
+    .menu>li>.home::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% + 5px);
+      background-color: #7dca3a;
     }
   </style>
 
@@ -77,23 +100,27 @@
 
 <body>
 
-  <section class="hero-sec pb-80">
+  <section>
 
-    <div class="container" style="border-bottom: 1px solid #d9ecc9;margin-bottom: 40px">
+    <div class="container" style="border-bottom: 1px solid #d9ecc9;">
       <div class="top-nav">
         <div>
           <a href="/passgenapp/"><img src="passgen-logo.png" width="200" alt="logo" loading="lazy" /></a>
         </div>
         <ul class="menu">
-          <li><a href="/passgenapp/">Home</a></li>
-          <li><a href="/passgenapp/about.html">About</a></li>
-          <li><a href="/passgenapp/brands.html">Brands</a></li>
-          <li><a href="/passgenapp/faq.html">FAQ</a></li>
+          <li><a class="home" href="/passgenapp/">Home</a></li>
+          <li><a class="about" href="/passgenapp/about.html">About</a></li>
+          <li><a class="brand" href="/passgenapp/brands.html">Brands</a></li>
+          <li><a class="faq" href="/passgenapp/faq.html">FAQ</a></li>
+          <li><a class="contact" href="/passgenapp/contact.html">Contact</a></li>
 
-          <li><a href="/passgenapp/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
+
+  </section>
+
+  <section class="hero-sec ptb-100">
     <div class="custom-container">
       <div class="content">
         <div class="title">
@@ -186,7 +213,7 @@
     </div>
   </section>
 
-  <section class="features ptb-80">
+  <section class="features ptb-100">
     <div class="custom-container">
       <div class="content">
         <div class="features-inner">
@@ -230,28 +257,28 @@
 
   </section>
 
-  <section class="hero-sec ptb-80" style="background-image: none; background-color: #f2f2f261;">
+  <section class="hero-sec ptb-100" style="background-image: none; background-color: #f2f2f261;">
 
     <div class="container ">
 
       <div class="row justify-content-center">
         <div class="col-md-8 mb-5">
-          <h2 class=" mb-3 section-title text-center">Our Worldwide Brands</h2>
+          <h2 class=" mb-3 section-title text-center">Our Global Resources, Your Business Advantage</h2>
 
-          <p class="text-center bran_link">We offer a wide range of IT services to clients around the world through
-            our prominent brands: <a href="https://alpha.net.bd/" target="_blank"> Alpha Net </a>,
-            <a href="https://www.cfl-it.com/" target="_blank">CFL-IT</a>,
-            <a href="https://www.godigital.com.bd/" target="_blank">Go Digital</a>,
-            <a href="https://ipbxphone.com/" target="_blank">PBX Phone</a>,
-            <a href="https://www.sms.net.bd/" target="_blank">Alpha SMS</a>,
-            <a href="https://www.vps.com.bd/" target="_blank">VPS</a>
-            <a href="https://www.pbx.com.bd/" target="_blank">Alpha PBX</a>,
-            <a href="https://virtue.works/" target="_blank">Virtue.works</a>,
-            <a href="https://dojos.info/" target="_blank">Dojos</a>,
-            <a href="https://www.hotelmotels.info/" target="_blank"> Hotel Motels</a>
-            and
-            <a href="https://www.pizzashops.info/" target="_blank"> Pizza Shops</a>,
-            Visit our websites for more details. 👇
+          <p class="text-center brand_link">
+            Pass-Gen has many other resources and brands that offer comprehensive cloud and IT solutions for business
+            growth. We've got you covered, from cloud services to website design,
+
+            <a href="https://www.godigital.com.bd/" target="_blank"> digital marketing </a> ,
+            <a href="https://www.godigital.com.bd/graphics-design/">graphic design</a> ,
+            <a href="https://ipbxphone.com/" target="_blank"> communication solutions</a>,
+            <a href="https://www.vps.com.bd/" target="_blank">residential VPS</a>,
+            <a href="https://ipbxphone.com/" target="_blank"> telephone systems</a>,
+            <a href="https://www.sms.net.bd/" target="_blank"> SMS services</a>,
+            <a href="https://www.pbx.com.bd/" target="_blank">PBX services</a> and more.
+
+            Focus on your core business while we handle the rest—partner with Pass-Gen's worldwide brand for innovative
+            solutions that drive success.
           </p>
 
         </div>
@@ -381,8 +408,10 @@
       </div>
 
       <div class="text-center">
-        <a href="/passgenapp/brands.html" class="more_btn mt-4">Learn More About of All Brands<img
-            src="./img/arrow-icon-2.svg" alt="arrow icon"></a>
+        <a href="/passgenapp/brands.html" class="btn btn-outline-success more_btn mt-4">
+          About of All Brands
+          <i class="fa-angles-right fa-solid fs-6"></i>
+        </a>
       </div>
 
     </div>
